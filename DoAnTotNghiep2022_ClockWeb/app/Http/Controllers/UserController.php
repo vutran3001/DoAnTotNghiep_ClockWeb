@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
@@ -14,7 +16,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('Admin.Account_index');
+        $users = DB::select('select * from users');
+        return view('Admin.Account.account_index',['users' => $users]);
     }
 
     /**
@@ -24,7 +27,7 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        return view('Admin.Account.account_edit');
     }
 
     /**
@@ -55,9 +58,10 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit(int $ID)
     {
-        //
+        $edit=User::where('id','=',$ID)->get();
+        return view('Admin.Account.account_edit',['edit'=>$edit]);
     }
 
     /**
@@ -78,8 +82,12 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(User $user)
+    public function destroy(Request $request,User $user)
     {
-        //
+        $user->fill([
+            'Trang Thai'=>$request->input(2),
+        ]);
+        $user->save();
+        return Redirect::route('User.index');
     }
 }
