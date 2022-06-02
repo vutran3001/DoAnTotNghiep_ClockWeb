@@ -29,6 +29,7 @@ class User extends Authenticatable
         'TrangThai',
     ];
 
+    protected $guarded=[];
     /**
      * The attributes that should be hidden for serialization.
      *

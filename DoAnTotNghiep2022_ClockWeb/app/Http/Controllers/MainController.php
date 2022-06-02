@@ -30,4 +30,17 @@ class MainController extends Controller
     {
         return view('Admin.Home');
     }
+    public function messages()
+    {
+        return view('Admin.Messages.messages');
+    }
+    public function messages_show()
+    {
+        return view('Admin.Messages.messages_show');
+    }
+
+    public function messages_send()
+    {
+        return view('Admin.Messages.messages_send');
+    }
 }
