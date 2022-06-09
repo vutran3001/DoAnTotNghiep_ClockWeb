@@ -71,9 +71,21 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request, User $User)
     {
-        //
+        $User->fill([
+            'name'=>$request->input('name'),
+            'email'=>$request->input('email'),
+            'password'=>$request->input('password'),
+            'GioiTinh'=>$request->input('gt'),
+            'NgaySinh'=>$request->input('date'),
+            'DiaChi'=>$request->input('address'),
+            'SDT'=>$request->input('sdt'),
+            'Quyen'=>$request->input('quyen'),
+            'TrangThai'=>$request->input('trangthai')
+        ]);
+        $User->save();
+        return Redirect::route('User.index',['User'=>$User->id]);
     }
 
     /**
@@ -82,12 +94,17 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Request $request,User $user)
+    public function destroy(Request $request,User $User)
     {
-        $user->fill([
-            'Trang Thai'=>$request->input(2),
+        $tt=2;
+        $User->fill([
+            'TrangThai'=>$tt,
         ]);
-        $user->save();
+        
+        // $User->fill([
+        //     'Trang Thai'=>$request->input($tt),
+        // ]);
+        $User->save();
         return Redirect::route('User.index');
     }
 }
