@@ -334,6 +334,18 @@
                                 </a>
                             </li>
                             <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" ><i
+                                    class="side-menu__icon fe fe-layers"></i><span
+                                        class="side-menu__label">Loại sản phẩm </span><i>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" ><i
+                                    class="side-menu__icon fe fe-users"></i><span
+                                        class="side-menu__label">Nhà cung cấp </span><i>
+                                </a>
+                            </li>
+                            <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
                                         class="side-menu__icon fe fe-clock"></i><span
                                         class="side-menu__label">Sản phẩm </span><i>
