@@ -23,8 +23,8 @@
                                         <th class="wd-15p border-bottom-0">Email</th>
                                         <th class="wd-15p border-bottom-0">Giới tính</th>
                                         <th class="wd-10p border-bottom-0">Ngày sinh</th>
-                                        <th class="wd-25p border-bottom-0">Quyền</th>
                                         <th class="wd-25p border-bottom-0">Trạng thái</th>
+                                        <th class="wd-25p border-bottom-0">Quyền</th>
                                         <th class="wd-25p border-bottom-0">#</th>
                                     </tr>
                                 </thead>
@@ -44,25 +44,29 @@
                                         <td><a>{{ $user->NgaySinh }}</a></td>
                                         <td>
                                             @if ($user->TrangThai==1)
-                                                <a>Quản trị viên</a>
+                                                <a>Hoạt động</a>
                                             @endif
                                             @if ($user->TrangThai!=1)
-                                                <a>Người dùng</a>
+                                                <a>Dừng hoạt động</a>
                                             @endif
                                         </td>
                                         <td>
                                             @if ($user->Quyen==1)
-                                                <a>Hoạt động</a>
+                                                <a>Quản trị viên</a>
                                             @endif
                                             @if ($user->Quyen!=1)
-                                                <a>Dừng hoạt động</a>
+                                                <a>Người dùng</a>
                                             @endif
                                         </td>
                                         <td>
                                             <button type="button" class="btn btn-icon  btn-purple"><i class="fe fe-eye"></i></button>
                                             <a href="{{ route('User.edit',['User'=>$user->id]) }}"><button type="button" class="btn btn-icon  btn-success"><i class="fe fe-edit"></i></button></a>
-                                            <a>
-                                               <button type="submit" class="btn btn-icon  btn-danger"><i class="fe fe-trash"></i></button>
+                                            <a type="button">
+                                                <form method="post" action="{{ route('User.destroy',['User'=>$user->id]) }}" enctype="multipart/form-data">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-icon  btn-danger"><i class="fe fe-trash"></i></button>
+                                                </form>
                                             </a>
                                         </td>
                                     </tr>
