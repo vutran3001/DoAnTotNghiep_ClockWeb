@@ -85,6 +85,7 @@ class UserController extends Controller
             'TrangThai'=>$request->input('trangthai')
         ]);
         $User->save();
+        session()->flash('success', 'Cập nhật tài khoản thành công.');
         return Redirect::route('User.index',['User'=>$User->id]);
     }
 
@@ -94,17 +95,16 @@ class UserController extends Controller
      * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
+
+
     public function destroy(Request $request,User $User)
     {
         $tt=2;
         $User->fill([
             'TrangThai'=>$tt,
         ]);
-        
-        // $User->fill([
-        //     'Trang Thai'=>$request->input($tt),
-        // ]);
         $User->save();
+        session()->flash('success', 'Đã dừng hoạt động tài khoản thành công');
         return Redirect::route('User.index');
     }
 }
