@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             LoaiSanPhamSeeder::class,
             NhaCungCapSeeder::class,
-            SlideSeeder::class
+            SlideSeeder::class,
+            ContactSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
     }
