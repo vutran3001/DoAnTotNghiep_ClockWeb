@@ -43,4 +43,9 @@ class MainController extends Controller
     {
         return view('Admin.Messages.messages_send');
     }
+
+    public function setting()
+    {
+        return view('Admin.Setting.setting');
+    }
 }

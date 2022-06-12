@@ -2,6 +2,7 @@
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SlideController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -31,5 +32,10 @@ Route::get('messages',[MainController::class,'messages'])->name('messages');
 Route::get('messages_show',[MainController::class,'messages_show'])->name('messages_show');
 Route::get('messages_send',[MainController::class,'messages_send'])->name('messages_send');
 
+//Cài đặt
+Route::get('setting',[MainController::class,'setting'])->name('setting');
 //Tài khoản
 Route::resource('User',UserController::class);
+
+//Slide
+Route::resource('Slide',SlideController::class);
