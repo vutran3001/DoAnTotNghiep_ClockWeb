@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Slide;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -16,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             LoaiSanPhamSeeder::class,
-            NhaCungCapSeeder::class
+            NhaCungCapSeeder::class,
+            SlideSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
     }

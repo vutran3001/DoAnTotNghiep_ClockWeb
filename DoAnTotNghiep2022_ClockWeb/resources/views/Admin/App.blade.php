@@ -34,6 +34,9 @@
     <!-- COLOR SKIN CSS -->
     <link id="theme" rel="stylesheet" type="text/css" media="all" href="../../Admin/assets/colors/color1.css" />
 
+     <!-- INTERNAL Switcher css -->
+     <link href="../../Admin/assets/switcher/css/switcher.css" rel="stylesheet" />
+     <link href="../../Admin/assets/switcher/demo.css" rel="stylesheet" />
 </head>
 
 <body class="app sidebar-mini ltr light-mode">
@@ -349,6 +352,18 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
                                         class="side-menu__icon fe fe-clock"></i><span
                                         class="side-menu__label">Sản phẩm </span><i>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('Slide.index') }}"><i
+                                        class="side-menu__icon fe fe-image"></i><span
+                                        class="side-menu__label">Slide </span><i>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('setting') }}"><i
+                                        class="side-menu__icon fa fa-cog"></i><span
+                                        class="side-menu__label">Cài đặt </span><i>
                                 </a>
                             </li>
                             <li class="slide">
@@ -1343,6 +1358,42 @@
 
      <!-- SHOW PASSWORD JS -->
      <script src="../../Admin/assets/js/show-password.min.js"></script>
+<!-- Slide -->
+     <!-- INTERNAL File-Uploads Js-->
+     <script src="../../Admin/assets/plugins/fancyuploder/jquery.ui.widget.js"></script>
+     <script src="../../Admin/assets/plugins/fancyuploder/jquery.fileupload.js"></script>
+     <script src="../../Admin/assets/plugins/fancyuploder/jquery.iframe-transport.js"></script>
+     <script src="../../Admin/assets/plugins/fancyuploder/jquery.fancy-fileupload.js"></script>
+     <script src="../../Admin/assets/plugins/fancyuploder/fancy-uploader.js"></script>
+     <!-- INTERNAL WYSIWYG Editor JS -->
+    <script src="../../Admin/assets/plugins/wysiwyag/jquery.richtext.js "></script>
+    <script src="../../Admin/assets/plugins/wysiwyag/wysiwyag.js "></script>
+
+    <!-- INTERNAL FORMEDITOR JS -->
+    <script src="../../Admin/assets/plugins/quill/quill.min.js"></script>
+    <script src="../../Admin/assets/js/form-editor2.js"></script>
+
+    <!-- INTERNAL SUMMERNOTE Editor JS -->
+    <script src="../../Admin/assets/plugins/summernote/summernote1.js"></script>
+    <script src="../../Admin/assets/js/summernote.js"></script>
+
+    <!-- CHARTJS CHART JS-->
+    <script src="../../Admin/assets/plugins/chart/Chart.bundle.js"></script>
+    <script src="../../Admin/assets/plugins/chart/utils.js"></script>
+
+    <!-- GALLERY JS -->
+    <script src="../../Admin/assets/plugins/gallery/picturefill.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lightgallery.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lightgallery-1.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lg-pager.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lg-autoplay.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lg-fullscreen.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lg-zoom.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lg-hash.js"></script>
+    <script src="../../Admin/assets/plugins/gallery/lg-share.js"></script>
+
+    <!-- Switcher js -->
+    <script src="../../Admin/assets/switcher/js/switcher.js"></script>
 </body>
 
 </html>
