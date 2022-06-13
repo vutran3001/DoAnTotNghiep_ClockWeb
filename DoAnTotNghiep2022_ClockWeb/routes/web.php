@@ -4,6 +4,8 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SlideController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\LoaiSanPhamController;
+use App\Http\Controllers\NhaCungCapController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -43,3 +45,9 @@ Route::resource('Slide',SlideController::class);
 
 //Contact
 Route::resource('Contact',ContactController::class);
+
+//Loại sản phẩm
+Route::resource('LoaiSanPham',LoaiSanPhamController::class);
+
+//Nhà cung cấp
+Route::resource('Supplier', NhaCungCapController::class);

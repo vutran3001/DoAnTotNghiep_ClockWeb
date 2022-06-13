@@ -13,7 +13,7 @@
     <meta name="keywords" content="admin,admin dashboard,admin panel,admin template,bootstrap,clean,dashboard,flat,jquery,modern,responsive,premium admin templates,responsive admin,ui,ui kit.">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/brand/favicon.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="../../Admin/assets/images/brand/favicon.ico" />
 
     <!-- TITLE -->
     <title>ClockWeb_LOGIN</title>
@@ -62,7 +62,7 @@
                         
                         <form action="login/store" method="POST" class="login100-form validate-form">
                             <span class="login100-form-title pb-5">
-                                Login
+                                Đăng nhập
                             </span>
                             @include('Admin.alert')
                             <div class="panel panel-primary">
@@ -82,17 +82,17 @@
                                                 <input class="input100 border-start-0 form-control ms-0" name="password" type="password" placeholder="Password">
                                             </div>
                                             <div class="text-end pt-4">
-                                                <p class="mb-0"><a href="forgot-password.html" class="text-primary ms-1">Forgot Password?</a></p>
+                                                <p class="mb-0"><a href="forgot-password.html" class="text-primary ms-1">Quên mật khẩu?</a></p>
                                             </div>
                                             <div class="container-login100-form-btn">
                                                 <button type="submit" class="login100-form-btn btn-primary">
-                                                        Login
+                                                        Đăng nhập
                                                 </button>
                                             </div>
                                             <div class="text-center pt-3">
-                                                <p class="text-dark mb-0">Not a member?<a href="register.html" class="text-primary ms-1">Sign UP</a></p>
+                                                <p class="text-dark mb-0">Bạn chưa có tài khoản?<a href="register.html" class="text-primary ms-1">Đăng ký</a></p>
                                             </div>
-                                            <label class="login-social-icon"><span>Login with Social</span></label>
+                                            <label class="login-social-icon"><span>Đăng nhập với tài khoản</span></label>
                                             <div class="d-flex justify-content-center">
                                                 <a href="javascript:void(0)">
                                                     <div class="social-login me-4 text-center">
