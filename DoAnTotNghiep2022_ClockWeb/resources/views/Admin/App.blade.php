@@ -337,7 +337,7 @@
                                 </a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" ><i
+                                <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('LoaiSanPham.index') }}"><i
                                     class="side-menu__icon fe fe-layers"></i><span
                                         class="side-menu__label">Loại sản phẩm </span><i>
                                 </a>
