@@ -343,7 +343,7 @@
                                 </a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" ><i
+                                <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('NhaCungCap.index') }}"><i
                                     class="side-menu__icon fe fe-users"></i><span
                                         class="side-menu__label">Nhà cung cấp </span><i>
                                 </a>

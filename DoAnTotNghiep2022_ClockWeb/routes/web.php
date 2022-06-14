@@ -50,4 +50,4 @@ Route::resource('Contact',ContactController::class);
 Route::resource('LoaiSanPham',LoaiSanPhamController::class);
 
 //Nhà cung cấp
-Route::resource('Supplier', NhaCungCapController::class);
+Route::resource('NhaCungCap', NhaCungCapController::class);
