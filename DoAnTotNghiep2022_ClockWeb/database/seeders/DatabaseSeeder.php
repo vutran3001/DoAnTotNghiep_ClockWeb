@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             SlideSeeder::class,
             ContactSeeder::class,
             MauSeeder::class,
+            SizeSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
     }

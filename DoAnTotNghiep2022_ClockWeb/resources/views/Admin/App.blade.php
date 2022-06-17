@@ -17,7 +17,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../../Admin/assets/images/brand/favicon.ico" />
 
     <!-- TITLE -->
-    <title>CloclWeb_ADMIN </title>
+    <title>ClockWeb_ADMIN </title>
 
     <!-- BOOTSTRAP CSS -->
     <link id="style" href="../../Admin/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -367,7 +367,7 @@
                                 </a>
                             </li>
                             <li class="slide">
-                                <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('Slide.index') }}"><i
+                                <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('Size.index') }}"><i
                                         class="side-menu__icon fe fe-octagon"></i><span
                                         class="side-menu__label">Size </span><i>
                                 </a>
