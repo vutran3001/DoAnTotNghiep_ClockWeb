@@ -59,5 +59,3 @@ Route::resource('Mau', MauController::class);
 
 //Size
 Route::resource('Size', SizeController::class);
-
-// áddasdsadsaas
