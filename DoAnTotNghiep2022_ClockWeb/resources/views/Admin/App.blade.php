@@ -350,7 +350,7 @@
                             </li>
                             <li class="slide">
                                 <a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0)"><i
-                                        class="side-menu__icon fe fe-clock"></i><span
+                                        class="side-menu__icon fe fe-watch"></i><span
                                         class="side-menu__label">Sản phẩm </span><i>
                                 </a>
                             </li>
@@ -358,6 +358,18 @@
                                 <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('Slide.index') }}"><i
                                         class="side-menu__icon fe fe-image"></i><span
                                         class="side-menu__label">Slide </span><i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="side-menu__item"  href="{{ route('Mau.index') }}"><i
+                                        class="side-menu__icon fe fe-grid"></i><span
+                                        class="side-menu__label">Màu</span>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="side-menu__item" data-bs-toggle="slide" href="{{ route('Slide.index') }}"><i
+                                        class="side-menu__icon fe fe-octagon"></i><span
+                                        class="side-menu__label">Size </span><i>
                                 </a>
                             </li>
                             <li class="slide">
