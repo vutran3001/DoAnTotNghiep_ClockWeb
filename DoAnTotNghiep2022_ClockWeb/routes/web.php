@@ -7,7 +7,7 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LoaiSanPhamController;
 use App\Http\Controllers\NhaCungCapController;
 use App\Http\Controllers\MauController;
-
+use App\Http\Controllers\SizeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -55,3 +55,6 @@ Route::resource('NhaCungCap', NhaCungCapController::class);
 
 //Màu
 Route::resource('Mau', MauController::class);
+
+//Size
+Route::resource('Size', SizeController::class);
