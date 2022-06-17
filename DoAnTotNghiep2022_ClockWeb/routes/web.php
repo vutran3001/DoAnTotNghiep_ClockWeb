@@ -31,6 +31,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('Main/mains',[MainController::class,'index']);
 });
 
+
 //Tin nhắn
 Route::get('messages',[MainController::class,'messages'])->name('messages');
 Route::get('messages_show',[MainController::class,'messages_show'])->name('messages_show');
@@ -58,3 +59,5 @@ Route::resource('Mau', MauController::class);
 
 //Size
 Route::resource('Size', SizeController::class);
+
+// áddasdsadsaas
